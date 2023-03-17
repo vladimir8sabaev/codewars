@@ -25,3 +25,15 @@ function binarySearch(array, item) {
 }
 console.log(binarySearch(arr, 5));
 console.log(count);
+
+function recursiveBinarySearch(arr, item, start, end) {
+	let middle = Math.floor((start + end) / 2);
+	if (item === arr[middle]) {
+		return middle;
+	}
+	if (item < arr[middle]) {
+		return recursiveBinarySearch(arr, item, 0, middle - 1);
+	} else {
+		return recursiveBinarySearch(arr, item, middle + 1, end);
+	}
+}
