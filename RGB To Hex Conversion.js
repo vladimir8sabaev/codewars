@@ -28,3 +28,5 @@ function numberToHex(number) {
 function rgb(r, g, b) {
 	return numberToHex(r) + numberToHex(g) + numberToHex(b);
 }
+
+const arr = ["2A", "3A", "4A", "5A"];
